@@ -8,6 +8,36 @@ body {
   width: 100%;
   height: 100%;
 }
+@font-face {
+  font-family: "font1";
+  src: url("/fonts/font1.otf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font2";
+  src: url("/fonts/font2.otf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "italic";
+  src: url("/fonts/Inter-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "medium";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "regular";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+
+  font-style: normal;
+}
 
 .bg {
   width: 100%;
@@ -24,7 +54,7 @@ body {
   nav {
     width: 95%;
     height: 15vh;
-    position: absolute;
+    position: sticky;
     top: 0;
 
     display: flex;
@@ -49,12 +79,14 @@ body {
 main {
   position: absolute;
   width: 100%;
-  height: 100%;
+  // height: 100%;
+  // overflow: auto;
   .page1 {
+    height: 10%;
+    width: 100%;
     h1 {
       font-size: 3em;
-      height: 10%;
-      width: 100%;
+
       margin: 3%;
       color: white;
     }
@@ -115,6 +147,10 @@ main {
           font-size: 2em;
           font-family: Inter, sans-serif;
           font-weight: 400;
+
+          span {
+            font-family: "font2";
+          }
         }
       }
       .right {
@@ -125,6 +161,259 @@ main {
           width: 60%;
           font-weight: 100;
         }
+      }
+    }
+  }
+  .page4 {
+    width: 100%;
+    display: flex;
+    gap: 4em;
+    padding: 5em;
+    h1,
+    p {
+      font-family: "regular";
+      font-weight: 50;
+    }
+    & > * {
+      flex-basis: 50%;
+    }
+
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+
+    .left {
+      width: 50%;
+      .top {
+      }
+      .middle {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        .left_arrow {
+          width: 5%;
+        }
+        img {
+          width: 100%;
+        }
+        .right_arrow {
+          width: 5%;
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        .line1 {
+          h1 {
+            font-family: "regular";
+            font-size: 0.8em;
+          }
+        }
+        .line2 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .left {
+            h1 {
+              font-size: 2em;
+            }
+          }
+          .right {
+            h1 {
+              font-size: 1em;
+              sup {
+                color: red;
+              }
+            }
+          }
+        }
+        .line3 {
+          display: flex;
+
+          align-items: center;
+          .box1 {
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            border-radius: 50%;
+          }
+          .box2 {
+            height: 20px;
+            width: 20px;
+            background-color: #f5f5e7;
+            border-radius: 50%;
+          }
+        }
+        .line4 {
+          display: flex;
+          justify-content: space-between;
+          & > * {
+            flex-basis: 50%;
+          }
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3em;
+            .top {
+              h1 {
+                font-size: 0.7em;
+              }
+            }
+            .bottom {
+              h1 {
+                font-size: 0.7em;
+                color: #333333;
+              }
+            }
+          }
+          .right {
+            p {
+              color: #333333;
+              font-size: 0.82em;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      .top {
+      }
+      .middle {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        .left_arrow {
+          width: 5%;
+        }
+        img {
+          width: 100%;
+        }
+        .right_arrow {
+          width: 5%;
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        .line1 {
+          h1 {
+            font-family: "regular";
+            font-size: 0.8em;
+          }
+        }
+        .line2 {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .left {
+            h1 {
+              font-size: 2em;
+            }
+          }
+          .right {
+            h1 {
+              font-size: 1em;
+              sup {
+                color: red;
+              }
+            }
+          }
+        }
+        .line3 {
+          display: flex;
+
+          align-items: center;
+          .box1 {
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            border-radius: 50%;
+          }
+          .box2 {
+            height: 20px;
+            width: 20px;
+            background-color: #f5f5e7;
+            border-radius: 50%;
+          }
+        }
+        .line4 {
+          display: flex;
+          justify-content: space-between;
+          & > * {
+            flex-basis: 50%;
+          }
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3em;
+            .top {
+              h1 {
+                font-size: 0.7em;
+              }
+            }
+            .bottom {
+              h1 {
+                font-size: 0.7em;
+                color: #333333;
+              }
+            }
+          }
+          .right {
+            p {
+              color: #333333;
+              font-size: 0.82em;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page5 {
+    padding: 7% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+
+    .top {
+      h1 {
+        font-weight: 400;
+        color: #000000;
+        font-family: Inter, sans-serif;
+        font-size: 4em;
+        padding: 0 20%;
+
+        text-align: center;
+      }
+    }
+    .bottom {
+      button {
+        padding: 0.9em 2em;
+        font-size: 1em;
+        font-weight: 550;
+        color: white;
+        background-color: rgb(234, 17, 17);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      button:hover {
+        background-color: #cc2f2b;
+        transform: scale(1.1);
       }
     }
   }

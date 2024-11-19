@@ -10,6 +10,35 @@ body {
   height: 100%;
 }
 
+@font-face {
+  font-family: "font1";
+  src: url("/fonts/font1.otf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font2";
+  src: url("/fonts/font2.otf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "italic";
+  src: url("/fonts/Inter-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "medium";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "regular";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-style: normal;
+}
 .bg {
   width: 100%;
   height: 100vh;
@@ -26,7 +55,7 @@ body {
 .bg nav {
   width: 95%;
   height: 15vh;
-  position: absolute;
+  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -50,12 +79,13 @@ body {
 main {
   position: absolute;
   width: 100%;
-  height: 100%;
+}
+main .page1 {
+  height: 10%;
+  width: 100%;
 }
 main .page1 h1 {
   font-size: 3em;
-  height: 10%;
-  width: 100%;
   margin: 3%;
   color: white;
 }
@@ -114,10 +144,219 @@ main .page3 .bottom .left h1 {
   font-family: Inter, sans-serif;
   font-weight: 400;
 }
+main .page3 .bottom .left h1 span {
+  font-family: "font2";
+}
 main .page3 .bottom .right h3 {
   font-family: Inter, sans-serif;
   color: #333333;
   font-size: 1em;
   width: 60%;
   font-weight: 100;
+}
+main .page4 {
+  width: 100%;
+  display: flex;
+  gap: 4em;
+  padding: 5em;
+  background-image: linear-gradient(45deg, #ffffff, #ffffff);
+}
+main .page4 h1,
+main .page4 p {
+  font-family: "regular";
+  font-weight: 50;
+}
+main .page4 > * {
+  flex-basis: 50%;
+}
+main .page4 .left {
+  width: 50%;
+}
+main .page4 .left .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .page4 .left .middle .left_arrow {
+  width: 5%;
+}
+main .page4 .left .middle img {
+  width: 100%;
+}
+main .page4 .left .middle .right_arrow {
+  width: 5%;
+}
+main .page4 .left .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .page4 .left .bottom .line1 h1 {
+  font-family: "regular";
+  font-size: 0.8em;
+}
+main .page4 .left .bottom .line2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .page4 .left .bottom .line2 .left h1 {
+  font-size: 2em;
+}
+main .page4 .left .bottom .line2 .right h1 {
+  font-size: 1em;
+}
+main .page4 .left .bottom .line2 .right h1 sup {
+  color: red;
+}
+main .page4 .left .bottom .line3 {
+  display: flex;
+  align-items: center;
+}
+main .page4 .left .bottom .line3 .box1 {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+main .page4 .left .bottom .line3 .box2 {
+  height: 20px;
+  width: 20px;
+  background-color: #f5f5e7;
+  border-radius: 50%;
+}
+main .page4 .left .bottom .line4 {
+  display: flex;
+  justify-content: space-between;
+}
+main .page4 .left .bottom .line4 > * {
+  flex-basis: 50%;
+}
+main .page4 .left .bottom .line4 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+main .page4 .left .bottom .line4 .left .top h1 {
+  font-size: 0.7em;
+}
+main .page4 .left .bottom .line4 .left .bottom h1 {
+  font-size: 0.7em;
+  color: #333333;
+}
+main .page4 .left .bottom .line4 .right p {
+  color: #333333;
+  font-size: 0.82em;
+}
+main .page4 .right {
+  width: 50%;
+}
+main .page4 .right .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .page4 .right .middle .left_arrow {
+  width: 5%;
+}
+main .page4 .right .middle img {
+  width: 100%;
+}
+main .page4 .right .middle .right_arrow {
+  width: 5%;
+}
+main .page4 .right .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .page4 .right .bottom .line1 h1 {
+  font-family: "regular";
+  font-size: 0.8em;
+}
+main .page4 .right .bottom .line2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .page4 .right .bottom .line2 .left h1 {
+  font-size: 2em;
+}
+main .page4 .right .bottom .line2 .right h1 {
+  font-size: 1em;
+}
+main .page4 .right .bottom .line2 .right h1 sup {
+  color: red;
+}
+main .page4 .right .bottom .line3 {
+  display: flex;
+  align-items: center;
+}
+main .page4 .right .bottom .line3 .box1 {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+main .page4 .right .bottom .line3 .box2 {
+  height: 20px;
+  width: 20px;
+  background-color: #f5f5e7;
+  border-radius: 50%;
+}
+main .page4 .right .bottom .line4 {
+  display: flex;
+  justify-content: space-between;
+}
+main .page4 .right .bottom .line4 > * {
+  flex-basis: 50%;
+}
+main .page4 .right .bottom .line4 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+main .page4 .right .bottom .line4 .left .top h1 {
+  font-size: 0.7em;
+}
+main .page4 .right .bottom .line4 .left .bottom h1 {
+  font-size: 0.7em;
+  color: #333333;
+}
+main .page4 .right .bottom .line4 .right p {
+  color: #333333;
+  font-size: 0.82em;
+}
+main .page5 {
+  padding: 7% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3em;
+  background-image: linear-gradient(45deg, #ffffff, #ffffff);
+}
+main .page5 .top h1 {
+  font-weight: 400;
+  color: #000000;
+  font-family: Inter, sans-serif;
+  font-size: 4em;
+  padding: 0 20%;
+  text-align: center;
+}
+main .page5 .bottom button {
+  padding: 0.9em 2em;
+  font-size: 1em;
+  font-weight: 550;
+  color: white;
+  background-color: rgb(234, 17, 17);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+main .page5 .bottom button:hover {
+  background-color: #cc2f2b;
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
