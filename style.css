@@ -94,6 +94,7 @@ main .page2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 5em;
   justify-content: center;
   gap: 2em;
   width: 100%;
@@ -203,6 +204,9 @@ main .page4 .left .bottom .line2 {
 main .page4 .left .bottom .line2 .left h1 {
   font-size: 2em;
 }
+main .page4 .left .bottom .line2 .right {
+  padding-left: 39%;
+}
 main .page4 .left .bottom .line2 .right h1 {
   font-size: 1em;
 }
@@ -282,6 +286,9 @@ main .page4 .right .bottom .line2 {
 main .page4 .right .bottom .line2 .left h1 {
   font-size: 2em;
 }
+main .page4 .right .bottom .line2 .right {
+  padding-left: 39%;
+}
 main .page4 .right .bottom .line2 .right h1 {
   font-size: 1em;
 }
@@ -359,4 +366,364 @@ main .page5 .bottom button {
 main .page5 .bottom button:hover {
   background-color: #cc2f2b;
   transform: scale(1.1);
+}
+main .page6 {
+  background-image: url(/page6_img1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+main .page6 h1 {
+  font-size: 3em;
+  font-family: "regular";
+  width: 50%;
+  color: white;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  font-weight: 100;
+}
+main .page7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7em;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(45deg, #ffffff, #ffffff);
+}
+main .page7 .top {
+  color: #000000;
+  font-family: Inter, sans-serif;
+  font-size: 1.4em;
+}
+main .page7 .middle {
+  font-weight: 400;
+  color: #000000;
+  font-family: Inter, sans-serif;
+  font-size: 4em;
+  width: 70%;
+}
+main .page7 .bottom {
+  color: #000000;
+  font-family: Inter, sans-serif;
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  .bg {
+    width: 100%;
+  }
+  .bg .video-background-mobile {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: fixed;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .bg nav {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  main .page2,
+  main .page7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+  }
+  main .page2 .top,
+  main .page7 .top {
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 1em;
+  }
+  main .page2 .middle,
+  main .page7 .middle {
+    font-weight: 400;
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 1.8em;
+    width: 100%;
+  }
+  main .page2 .bottom,
+  main .page7 .bottom {
+    color: #000000;
+    font-family: Inter, sans-serif;
+    width: 100%;
+  }
+  main .page3 {
+    display: flex;
+    flex-direction: column;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 1em;
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+  }
+  main .page3 .top {
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  main .page3 .top img {
+    width: 100%;
+  }
+  main .page3 .bottom {
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding-top: 1.5em;
+    gap: 1.5em;
+  }
+  main .page3 .bottom .left h1 {
+    width: 100%;
+    font-size: 2em;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+  }
+  main .page3 .bottom .left h1 span {
+    font-family: "font2";
+  }
+  main .page3 .bottom .right h3 {
+    font-family: Inter, sans-serif;
+    color: #333333;
+    font-size: 1em;
+    width: 100%;
+    font-weight: 100;
+  }
+  main .page4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 1em;
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+  }
+  main .page4 h1,
+  main .page4 p {
+    font-family: "regular";
+    font-weight: 50;
+  }
+  main .page4 .left {
+    width: 100%;
+  }
+  main .page4 .left .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .page4 .left .middle .left_arrow {
+    width: 5%;
+  }
+  main .page4 .left .middle img {
+    width: 100%;
+  }
+  main .page4 .left .middle .right_arrow {
+    width: 5%;
+  }
+  main .page4 .left .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  main .page4 .left .bottom .line1 h1 {
+    font-family: "regular";
+    font-size: 0.8em;
+  }
+  main .page4 .left .bottom .line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .page4 .left .bottom .line2 .left h1 {
+    font-size: 2em;
+  }
+  main .page4 .left .bottom .line2 .right h1 {
+    font-size: 1em;
+  }
+  main .page4 .left .bottom .line2 .right h1 sup {
+    color: red;
+  }
+  main .page4 .left .bottom .line3 {
+    display: flex;
+    align-items: center;
+  }
+  main .page4 .left .bottom .line3 .box1 {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  main .page4 .left .bottom .line3 .box2 {
+    height: 20px;
+    width: 20px;
+    background-color: #f5f5e7;
+    border-radius: 50%;
+  }
+  main .page4 .left .bottom .line4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+  }
+  main .page4 .left .bottom .line4 .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  main .page4 .left .bottom .line4 .left .top h1 {
+    font-size: 0.8em;
+  }
+  main .page4 .left .bottom .line4 .left .bottom h1 {
+    font-size: 0.8em;
+    color: #333333;
+  }
+  main .page4 .left .bottom .line4 .right p {
+    color: #333333;
+    font-size: 0.9em;
+    width: 100%;
+  }
+  main .page4 .right {
+    width: 100%;
+  }
+  main .page4 .right .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .page4 .right .middle .left_arrow {
+    width: 5%;
+  }
+  main .page4 .right .middle img {
+    width: 100%;
+  }
+  main .page4 .right .middle .right_arrow {
+    width: 5%;
+  }
+  main .page4 .right .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  main .page4 .right .bottom .line1 h1 {
+    font-family: "regular";
+    font-size: 0.8em;
+  }
+  main .page4 .right .bottom .line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .page4 .right .bottom .line2 .left h1 {
+    font-size: 2em;
+  }
+  main .page4 .right .bottom .line2 .right h1 {
+    font-size: 1em;
+  }
+  main .page4 .right .bottom .line2 .right h1 sup {
+    color: red;
+  }
+  main .page4 .right .bottom .line3 {
+    display: flex;
+    align-items: center;
+  }
+  main .page4 .right .bottom .line3 .box1 {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  main .page4 .right .bottom .line3 .box2 {
+    height: 20px;
+    width: 20px;
+    background-color: #f5f5e7;
+    border-radius: 50%;
+  }
+  main .page4 .right .bottom .line4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+  }
+  main .page4 .right .bottom .line4 .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  main .page4 .right .bottom .line4 .left .top h1 {
+    font-size: 0.8em;
+  }
+  main .page4 .right .bottom .line4 .left .bottom h1 {
+    font-size: 0.8em;
+    color: #333333;
+  }
+  main .page4 .right .bottom .line4 .right p {
+    color: #333333;
+    font-size: 0.9em;
+    width: 100%;
+  }
+  main .page5 {
+    padding: 7% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+  }
+  main .page5 .top h1 {
+    font-weight: 400;
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 1.5em;
+    padding: 0 10%;
+    text-align: center;
+  }
+  main .page5 .bottom button {
+    padding: 0.9em 2em;
+    font-size: 1em;
+    font-weight: 550;
+    color: white;
+    background-color: rgb(234, 17, 17);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  main .page5 .bottom button:hover {
+    background-color: #cc2f2b;
+    transform: scale(1.1);
+  }
+  main .page6 {
+    background-image: url(/page6_img1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  main .page6 h1 {
+    font-size: 1em;
+    font-family: "regular";
+    width: 50%;
+    color: white;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    font-weight: 100;
+  }
 }/*# sourceMappingURL=style.css.map */
